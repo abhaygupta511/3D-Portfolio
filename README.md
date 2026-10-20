@@ -1,11 +1,8 @@
-# Abhay Gupta — Portfolio
+# Abhay's Works World — 3D Portfolio
+This is the existing Three.js portfolio experience with the skyfall intro, Rajasthani-inspired palace, room interactions, creative universe, profile hall, and THANK YOU ending.
 
-This repository contains the website code for a dark blue and gold design portfolio.
+## Realistic character asset
+The code now supports a rigged GLB human model at `assets/models/abhay-human.glb`. The website will gracefully keep the fallback character until that file exists. To achieve the requested photorealistic human, place a properly licensed rigged GLB model at that path (ideally with idle, walk, run and falling animations). A photorealistic model cannot be truthfully fabricated from code primitives alone.
 
-## Important: assets are separate
-The homepage references files inside `assets/work/`, `assets/video-posters/`, `assets/videos/`, and `assets/documents/`. Upload your optimized media files into those exact folders, keeping the names and paths from the website ZIP. The archive list in `work-data.json` must also be replaced with the supplied project index from the ZIP.
-
-## Publish with GitHub Pages
-In repository Settings → Pages, choose GitHub Actions or deploy from the `main` branch root. Then wait for the deployment to complete in Actions.
-
-Website: https://abhaygupta511.github.io/3D-Portfolio/
+## Run
+GitHub Pages serves the site from the repository root. Three.js and GLTFLoader are loaded from jsDelivr, so the browser needs internet access.
